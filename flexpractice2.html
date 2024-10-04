@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+        }
+        .parent{
+            
+            height: 800px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding-top: 50px;
+            background-color:rgb(15, 17, 17);
+            
+            
+            
+        }
+        .Box{
+            border: 2px solid gray;
+            height:450px;
+            width: 350px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            line-height: 40px;
+            padding-top: 30px;
+            color:white;
+            background-color: black;
+
+        }
+        
+        .nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            height: 50px;
+            padding-top: 20px;
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        h1{
+            color:lightsalmon;
+        }
+        h4{
+            color: lightseagreen;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .im{
+            height:100px;
+            width:100px;
+        }
+        p{
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .button{
+            height:30px;
+            width:90px;
+            margin-top: 1px;
+            font-size: 15x;
+            background-color: black;
+            border: 2px solid white;
+            color: white;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        
+        }
+        .button:hover {
+            background-color:lightseagreen;
+            color: white;
+            transform: scale(1.2);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div>PRODUCTS</div>
+        <div><button class="button">DISCOUNTS</button></div>
+        <div>OUR PARTNERS</div>
+        <div>ABOUT US</div>
+    </div>
+    <div class="parent">
+        <div class="Box" id="Box-1">
+            <img src="./img/matte.png" alt="100X100" class="im"><br><br>
+            <h1>MATTE</h1><p>
+            a subtle but elegant <br>finish for low-touch and<br>delicate surfaces</p>
+            <br><h4>EXPLORE</h4>
+        </div>
+        <div class="Box" id="Box-2">
+            <img src="./img/gloss.png" alt="100X100" class="im"><br><br>
+            <h1>SEMI-GLOSS</h1>
+             <p>our signature finish for<br>high wear parts,details
+            <br>and surfaces</p><br><h4>EXPLORE</h4>
+        </div>
+        <div class="Box" id="Box-3">
+            <img src="./img/hg.png" alt="100X100" class="im"><br><br>
+            <h1>HIGH-GLOSS</h1>
+            <p>an eye stopping shine<br>
+            best for metal and other<br>
+            smooth surfaces<br></p><br>
+            <h4>EXPLORE</h4>
+        </div>
+    </div>
+    
+</body>
+</html>
