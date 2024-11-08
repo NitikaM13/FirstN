@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="Assignment2.html" name="fr">
+        <label for="log">Login:</label>
+        <input type="text" id="log" placeholder="Enter login id"><br><br>
+        <label for ="pswd">Password:</label>
+        <input type="text" id="pswd" placeholder="Enter Password"><br><br>
+        <button id="btn" onclick="validateForm()">Submit</button>
+        <button id="rb">Reset</button>
+    </form>
+    <script>
+        function validateForm(){
+          let u=document.getElementById("log");
+          let p=document.getElementById("pswd");
+          if (u == "admin" && p == "admin") {
+            window.location.href='Assignment2.html';
+            
+          }
+          else{
+            alert("Invalid user");
+          }
+        }
+        
+    </script>
+</body>
+</html>
